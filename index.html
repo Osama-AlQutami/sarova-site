@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sarova — Beauty Lounge</title>
+  <meta name="description" content="Sarova — A premium beauty lounge in Amman specializing in nails, skincare, and lashes. Book your appointment now via Fresha." />
+  <meta property="og:title" content="Sarova — Beauty Lounge" />
+  <meta property="og:description" content="Premium nails, skincare, and lashes in Amman. Book now via Fresha." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sarovajo.com" />
+  <meta name="theme-color" content="#f4b6c2" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23f4b6c2'/%3E%3Ctext x='50%25' y='57%25' text-anchor='middle' font-size='36' font-family='Arial' fill='white'%3ES%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{
+      --pink:#f4b6c2; --beige:#f5efe6; --ink:#1a1a1a; --muted:#555; --accent:#f4b6c2;
+      --radius:16px; --shadow:0 10px 30px rgba(0,0,0,.12);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--beige);color:var(--ink);font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+    header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);border-bottom:1px solid rgba(0,0,0,.08);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{width:40px;height:40px;border-radius:50%;background:var(--pink);display:grid;place-items:center;color:white;font-weight:700;font-size:18px}
+    .brand h1{font-size:20px;margin:0;color:var(--ink)}
+    .nav a.btn{background:var(--pink);padding:10px 14px;border-radius:999px;box-shadow:var(--shadow);color:white}
+    .hero{padding:64px 0}
+    .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+    .card{background:white;border-radius:var(--radius);box-shadow:var(--shadow);padding:26px}
+    .tag{display:inline-block;background:var(--pink);color:white;padding:6px 10px;border-radius:999px;font-size:12px}
+    h2{margin:14px 0 12px;font-size:32px;color:var(--ink)}
+    p.lead{color:var(--muted);line-height:1.7}
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .cta .btn{padding:12px 16px;border-radius:12px;border:1px solid rgba(0,0,0,.12)}
+    .cta .primary{background:var(--pink);color:white}
+    .cta .ghost{background:transparent;color:var(--pink)}
+    .photo{min-height:320px;background:url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1600&auto=format&fit=crop') center/cover;border-radius:var(--radius);box-shadow:var(--shadow)}
+    .section{padding:40px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .tile{padding:18px;border-radius:14px;background:#fff;border:1px solid rgba(0,0,0,.06)}
+    .tile h3{margin:6px 0 8px;font-size:18px}
+    .tile p{margin:0;color:var(--muted)}
+    .prices{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .price-card{padding:18px;border-radius:14px;background:#fff;border:1px solid rgba(0,0,0,.06)}
+    .price-card header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+    .price{font-weight:700;color:#9b2d3f}
+    ul{margin:8px 0 0;padding:0 18px;color:var(--muted)}
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:12px;border:1px solid rgba(0,0,0,.06)}
+    .contact{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}
+    .map{height:280px;border-radius:14px;border:1px solid rgba(0,0,0,.06)}
+    footer{padding:20px 0;border-top:1px solid rgba(0,0,0,.08);color:var(--muted)}
+    .fresha-fab{position:fixed;left:16px;bottom:16px;background:var(--pink);color:#fff;padding:12px 16px;border-radius:999px;display:flex;align-items:center;gap:8px;box-shadow:var(--shadow)}
+    @media (max-width:900px){
+      .hero .wrap, .contact{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+      .prices{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">S</div>
+        <h1>Sarova</h1>
+      </div>
+      <nav>
+        <a href="#services">Services</a> ·
+        <a href="#prices">Prices</a> ·
+        <a href="#contact">Contact</a>
+        <a class="btn" href="https://www.fresha.com/a/sarova-amman-queen-alia-airport-road-u4re05wi" target="_blank">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container wrap">
+      <div class="content card">
+        <span class="tag">Premium Lounge • Amman</span>
+        <h2>Your Beauty, Our Passion</h2>
+        <p class="lead">Experience top-tier nail care, skincare, and lash services in a chic setting with our signature pink & beige identity. At Sarova, beauty meets comfort with easy online booking.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://www.fresha.com/a/sarova-amman-queen-alia-airport-road-u4re05wi" target="_blank">Book Appointment</a>
+          <a class="btn ghost" href="#prices">View Prices</a>
+        </div>
+      </div>
+      <div class="photo" role="img" aria-label="Beauty lounge interior"></div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="tile"><h3>Nail Care</h3><p>Manicure/Pedicure, shaping, deep clean, French.</p></div>
+        <div class="tile"><h3>Gel Color</h3><p>Long-lasting shades, gel removal, trendy designs.</p></div>
+        <div class="tile"><h3>Skincare</h3><p>Deep cleansing, hydrating masks, glow facials.</p></div>
+        <div class="tile"><h3>Lashes & Brows</h3><p>Lash lift, brow shaping and tinting.</p></div>
+        <div class="tile"><h3>Packages</h3><p>Occasion & bridal bundles with special prices.</p></div>
+        <div class="tile"><h3>Monthly Offers</h3><p>Smart discounts on off-peak hours.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices" class="section">
+    <div class="container">
+      <h2>Prices</h2>
+      <div class="prices">
+        <div class="price-card">
+          <header><strong>Manicure with color</strong><span class="price">15 JOD</span></header>
+          <ul><li>Clean, shape, buff</li><li>Full sanitation</li><li>Color of your choice</li></ul>
+        </div>
+        <div class="price-card">
+          <header><strong>Pedicure with color</strong><span class="price">20 JOD</span></header>
+          <ul><li>Heel care</li><li>Sanitize & treat</li><li>Durable color</li></ul>
+        </div>
+        <div class="price-card">
+          <header><strong>Gel color (Hands)</strong><span class="price">25 JOD</span></header>
+          <ul><li>Nail prep</li><li>Two gel coats</li><li>Gloss finish</li></ul>
+        </div>
+        <div class="price-card">
+          <header><strong>Facial cleansing</strong><span class="price">40 JOD</span></header>
+          <ul><li>Steam & extraction</li><li>Soothing mask</li><li>Final serum</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact">
+      <div class="card" style="padding:18px">
+        <h2>Location & Contact</h2>
+        <p>Airport Road — Amman</p>
+        <p>Booking: <a href="https://www.fresha.com/a/sarova-amman-queen-alia-airport-road-u4re05wi" target="_blank">Book via Fresha</a></p>
+        <p>Google Maps: <a href="https://maps.app.goo.gl/g4tAxYKeJQj8AYLn8" target="_blank" rel="noopener">Open Map</a></p>
+        <p>Website: <a href="https://sarovajo.com" target="_blank" rel="noopener">sarovajo.com</a></p>
+        <p>Instagram: <a href="#" target="_blank" rel="noopener">@sarovajo</a></p>
+        <p>Opening Hours: Daily 10:00 AM — 9:00 PM</p>
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.403!2d35.877!3d31.953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDU3JzA5LjAiTiAzNcKwNTInMzYuMiJF!5e0!3m2!1sen!2sjo!4v1700000000000" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google Map"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Sarova — Amman. All Rights Reserved.</small>
+    </div>
+  </footer>
+
+  <a class="fresha-fab" href="https://www.fresha.com/a/sarova-amman-queen-alia-airport-road-u4re05wi" target="_blank" aria-label="Book on Fresha">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 12a7 7 0 1114 0 7 7 0 01-14 0zm7-5a5 5 0 100 10 5 5 0 000-10z" stroke="white"/></svg>
+    Book Now
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
